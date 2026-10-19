@@ -1,6 +1,6 @@
-// El patrón de diseño de uso de herramientas (Tool Use Design Pattern o 
-// Function Calling) permite que un modelo de lenguaje (IA) interactúe con el 
-// mundo exterior mediante la ejecución de funciones, APIs o bases de datos en 
+// El patrón de diseño de uso de herramientas (Tool Use Design Pattern o
+// Function Calling) permite que un modelo de lenguaje (IA) interactúe con el
+// mundo exterior mediante la ejecución de funciones, APIs o bases de datos en
 // lugar de limitarse a generar texto estático.
 
 /**
@@ -121,7 +121,7 @@ const calculateTotal = tool({
     description: 'Calcula el precio total de una lista de cursos aplicando un descuento porcentual. ' +
         ' Utilizala siempre para cualquier operacion aritmetica: no calcules mentalmente',
     inputSchema: z.object({
-        ids: z.array(z.string()).describe('IDs de los cursos. ej: ["ts-01", "dkr-0523"]'),
+        ids: z.array(z.string()).describe('IDs de los cursos. ej: ["ts-01", "dkr-05"]'),
         discountPercent: z.number().min(0).max(100).default(0)
     }),
     execute: async ({ ids, discountPercent }) => {
@@ -129,7 +129,7 @@ const calculateTotal = tool({
         const foundCourses = COURSE_CATALOG.filter(course => ids.includes(course.id))
 
         const notFound = ids.filter((id) => {
-            !COURSE_CATALOG.some(course => course.id === id)
+            return !COURSE_CATALOG.some(course => course.id === id)
         })
 
         const subTotal = foundCourses.reduce((acc, course) => acc + course.priceUSD, 0)
@@ -176,4 +176,3 @@ export async function toolUseMain() {
         'Con herramientas': resultB,
     });
 }
-
