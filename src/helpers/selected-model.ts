@@ -6,7 +6,7 @@
 
 // Groq:
 // npm i @ai-sdk/groq
-import { groq } from '@ai-sdk/groq';
+// import { groq } from '@ai-sdk/groq';
 
 // Anthropic:
 // npm i @ai-sdk/anthropic
@@ -23,10 +23,10 @@ import { google } from '@ai-sdk/google';
 // Ollama:
 // npm i ollama-ai-provider-v2
 // A diferencia de los anteriores, este es un proveedor comunitario.
-import { ollama } from 'ollama-ai-provider-v2';
+// import { ollama } from 'ollama-ai-provider-v2';
 
 // Groq:
-export const model = groq('openai/gpt-oss-20b');
+// export const model = groq('openai/gpt-oss-20b');
 // export const model = groq('openai/gpt-oss-120b');
 
 // Anthropic:
@@ -36,7 +36,7 @@ export const model = groq('openai/gpt-oss-20b');
 // export const model = openai('gpt-5-mini');
 
 // Gemini:
-// export const model = google('gemini-2.5-flash');
+export const model = google('gemini-3.8-flash');
 
 // Ollama:
 // export const model = ollama('gpt-oss');
