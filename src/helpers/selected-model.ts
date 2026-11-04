@@ -36,9 +36,9 @@ import { ollama } from 'ollama-ai-provider-v2';
 // export const model = openai('gpt-5-mini');
 
 // Gemini:
-export const model = google('gemini-3.8-flash');
+// export const model = google('gemini-3.8-flash');
 
 // Ollama:
-// export const model = ollama('qwen2.5:1.5b'); // NO THINKING
+export const model = ollama('qwen2.5:1.5b'); // NO THINKING
 // export const model = ollama('glm-4.7-flash'); // THINKING
 
