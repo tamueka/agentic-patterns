@@ -1,5 +1,6 @@
 import './helpers/string-colors.js';
-import { routingMain } from './patterns/08-routing/multi-routing.js';
+import { orchestratorWorkersMain } from './patterns/09-orchestrator/orchestrator.js';
+// import { routingMain } from './patterns/08-routing/multi-routing.js';
 // import { codeActMain } from './patterns/07-codeAct/codeAct.js';
 // import { planAndExecuteMain } from './patterns/06-plan-and-execute/plan-and-execute.js';
 // import { promptChainingMain } from './patterns/05-promp-chaining/promp-chaining.js';
@@ -21,4 +22,5 @@ console.clear();
 // await promptChainingMain();
 // await planAndExecuteMain();
 // await codeActMain();
-await routingMain();
+// await routingMain();
+await orchestratorWorkersMain();
