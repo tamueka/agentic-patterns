@@ -24,6 +24,7 @@
     "@ai-sdk/groq": "^4.0.57",
     "@ai-sdk/openai": "^4.0.86",
     "ai": "^7.0.59",
+    "dotenv": "^18.0.10",
     "ollama-ai-provider-v2": "^4.0.1",
     "zod": "^4.4.3"
   }
