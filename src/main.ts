@@ -1,5 +1,6 @@
 import './helpers/string-colors.js';
-import { orchestratorWorkersMain } from './patterns/09-orchestrator/orchestrator.js';
+import { parallelizationMain } from './patterns/10-parallelization/parallelizations.js';
+// import { orchestratorWorkersMain } from './patterns/09-orchestrator/orchestrator.js';
 // import { routingMain } from './patterns/08-routing/multi-routing.js';
 // import { codeActMain } from './patterns/07-codeAct/codeAct.js';
 // import { planAndExecuteMain } from './patterns/06-plan-and-execute/plan-and-execute.js';
@@ -23,4 +24,5 @@ console.clear();
 // await planAndExecuteMain();
 // await codeActMain();
 // await routingMain();
-await orchestratorWorkersMain();
+// await orchestratorWorkersMain();
+await parallelizationMain();
