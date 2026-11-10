@@ -40,6 +40,6 @@ import { ollama } from 'ollama-ai-provider-v2';
 
 // Ollama:
 // export const model = ollama('qwen2.5:1.5b'); // NO THINKING
-// export const model = ollama('glm-4.7-flash'); // THINKING
-export const model = ollama('deepseek-r1:1.5b'); // THINKING
+export const model = ollama('glm-4.7-flash'); // THINKING
+// export const model = ollama('deepseek-r1:1.5b'); // THINKING
 
