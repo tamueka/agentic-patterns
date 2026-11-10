@@ -1,5 +1,6 @@
 import './helpers/string-colors.js';
-import { parallelizationMain } from './patterns/10-parallelization/parallelizations.js';
+import { humanInTheLoopMain } from './patterns/11-human-loop/human-loop.js';
+// import { parallelizationMain } from './patterns/10-parallelization/parallelizations.js';
 // import { orchestratorWorkersMain } from './patterns/09-orchestrator/orchestrator.js';
 // import { routingMain } from './patterns/08-routing/multi-routing.js';
 // import { codeActMain } from './patterns/07-codeAct/codeAct.js';
@@ -25,4 +26,5 @@ console.clear();
 // await codeActMain();
 // await routingMain();
 // await orchestratorWorkersMain();
-await parallelizationMain();
+// await parallelizationMain();
+await humanInTheLoopMain();
